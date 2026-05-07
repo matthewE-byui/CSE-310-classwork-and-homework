@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd \"c:\\\\school\\\\CSE310\\\\Module 1\"; python main\\.py --file example_scenario\\.json --steps 100 --no-render$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
