@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build NBody",
+            "type": "shell",
+            "command": "C:/Program Files/LLVM/bin/clang++.exe",
+            "args": [
+                "-std=c++17",
+                "-O2",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}/Module 1/main.cpp",
+                "${workspaceFolder}/Module 1/Simulation.cpp",
+                "${workspaceFolder}/Module 1/Renderer.cpp",
+                "${workspaceFolder}/Module 1/Scenarios.cpp",
+                "${workspaceFolder}/Module 1/ConfigLoader.cpp",
+                "-o",
+                "${workspaceFolder}/Module 1/nbody.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Module 1"
+            }
+        }
+    ]
+}

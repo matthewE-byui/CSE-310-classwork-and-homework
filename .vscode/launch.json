@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run NBody (Animated)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Module 1/nbody.exe",
+            "args": [
+                "--scenario",
+                "solar_system",
+                "--steps",
+                "1000"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Module 1",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build NBody"
+        }
+        {
+            "name": "Run NBody (Headless Info)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Module 1/nbody.exe",
+            "args": [
+                "--scenario",
+                "solar_system",
+                "--steps",
+                "500",
+                "--no-render"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Module 1",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build NBody"
+        }
+    ]
+}
