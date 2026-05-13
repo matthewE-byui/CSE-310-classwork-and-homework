@@ -4,5 +4,6 @@
             "approve": true,
             "matchCommandLine": true
         }
-    }
+    },
+    "cmake.sourceDirectory": "C:/school/CSE310/Module 1"
 }
