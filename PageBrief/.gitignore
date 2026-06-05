@@ -1,0 +1,8 @@
+# Ignore secret files — never commit API keys
+.env
+.env.local
+secrets/
+*.key
+backend/.env
+backend/node_modules/
+backend/data/store.json
