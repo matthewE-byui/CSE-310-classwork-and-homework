@@ -4,6 +4,8 @@ PageBrief is a Chrome browser extension (Manifest V3) that summarizes any webpag
 
 ---
 
+Youtube Url: https://youtu.be/lMMnflEO8Jo
+
 ## Features
 
 - **One-click summarization** — works on any webpage
