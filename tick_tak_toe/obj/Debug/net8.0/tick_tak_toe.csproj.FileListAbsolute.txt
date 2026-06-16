@@ -1,0 +1,15 @@
+C:\school\CSE310\tick_tak_toe\bin\Debug\net8.0\tick_tak_toe.exe
+C:\school\CSE310\tick_tak_toe\bin\Debug\net8.0\tick_tak_toe.deps.json
+C:\school\CSE310\tick_tak_toe\bin\Debug\net8.0\tick_tak_toe.runtimeconfig.json
+C:\school\CSE310\tick_tak_toe\bin\Debug\net8.0\tick_tak_toe.dll
+C:\school\CSE310\tick_tak_toe\bin\Debug\net8.0\tick_tak_toe.pdb
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.GeneratedMSBuildEditorConfig.editorconfig
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.AssemblyInfoInputs.cache
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.AssemblyInfo.cs
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.csproj.CoreCompileInputs.cache
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.sourcelink.json
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.dll
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\refint\tick_tak_toe.dll
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.pdb
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\tick_tak_toe.genruntimeconfig.cache
+C:\school\CSE310\tick_tak_toe\obj\Debug\net8.0\ref\tick_tak_toe.dll

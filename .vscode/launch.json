@@ -17,7 +17,7 @@
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "Build NBody"
-        }
+        },
         {
             "name": "Run NBody (Headless Info)",
             "type": "cppvsdbg",
@@ -35,6 +35,15 @@
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "Build NBody"
+        },
+        {
+            "name": "Run Tic-Tac-Toe (C#)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/tick_tak_toe/bin/Debug/net10.0/tick_tak_toe.dll",
+            "cwd": "${workspaceFolder}/tick_tak_toe",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
         }
     ]
 }

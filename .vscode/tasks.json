@@ -1,34 +1,117 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Build NBody",
-            "type": "shell",
-            "command": "C:/Program Files/LLVM/bin/clang++.exe",
-            "args": [
-                "-std=c++17",
-                "-O2",
-                "-Wall",
-                "-Wextra",
-                "-pedantic",
-                "${workspaceFolder}/Module 1/main.cpp",
-                "${workspaceFolder}/Module 1/Simulation.cpp",
-                "${workspaceFolder}/Module 1/Renderer.cpp",
-                "${workspaceFolder}/Module 1/Scenarios.cpp",
-                "${workspaceFolder}/Module 1/ConfigLoader.cpp",
-                "-o",
-                "${workspaceFolder}/Module 1/nbody.exe"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}/Module 1"
-            }
-        }
-    ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build NBody",
+			"type": "shell",
+			"command": "C:/Program Files/LLVM/bin/clang++.exe",
+			"args": [
+				"-std=c++17",
+				"-O2",
+				"-Wall",
+				"-Wextra",
+				"-pedantic",
+				"${workspaceFolder}/Module 1/main.cpp",
+				"${workspaceFolder}/Module 1/Simulation.cpp",
+				"${workspaceFolder}/Module 1/Renderer.cpp",
+				"${workspaceFolder}/Module 1/Scenarios.cpp",
+				"${workspaceFolder}/Module 1/ConfigLoader.cpp",
+				"-o",
+				"${workspaceFolder}/Module 1/nbody.exe"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/Module 1"
+			}
+		},
+		{
+			"label": "Build TicTacToe CSharp",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"-nologo",
+				"tick_tak_toe/tick_tak_toe.csproj"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Smoke Test TicTacToe",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"\"$inputData = '1`n2`n4`n5`n7`nn`n'; $inputData | dotnet run --project tick_tak_toe/tick_tak_toe.csproj\""
+			]
+		},
+		{
+			"label": "Rebuild TicTacToe CSharp",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"-nologo",
+				"tick_tak_toe/tick_tak_toe.csproj"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Smoke Test TicTacToe 2",
+			"type": "shell",
+			"command": "$inputData = \"1`n2`n4`n5`n7`nn`n\"; $inputData | dotnet run --project tick_tak_toe/tick_tak_toe.csproj"
+		},
+		{
+			"label": "Rebuild TicTacToe After EOF Fix",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"-nologo",
+				"tick_tak_toe/tick_tak_toe.csproj"
+			]
+		},
+		{
+			"label": "Final Rebuild TicTacToe",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"-nologo",
+				"tick_tak_toe/tick_tak_toe.csproj"
+			]
+		},
+		{
+			"label": "Kill Stuck TicTacToe Process",
+			"type": "shell",
+			"command": "Stop-Process -Id 81352 -Force"
+		},
+		{
+			"label": "Rebuild After Kill",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"-nologo",
+				"tick_tak_toe/tick_tak_toe.csproj"
+			]
+		},
+		{
+			"label": "Run TicTacToe Game",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"--project",
+				"tick_tak_toe/tick_tak_toe.csproj"
+			],
+			"isBackground": true
+		}
+	]
 }
